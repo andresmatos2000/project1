@@ -2,6 +2,7 @@
 #include "MatcherAutomaton.h"
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -11,6 +12,17 @@ int main(int argc, char** argv) {
 
     // TODO
     std::cout << filename;
+
+    string STRING;
+    ifstream infile;
+    infile.open ("names.txt");
+    while(!infile.eof()) // To get you all the lines.
+    {
+        getline(infile,STRING); // Saves the line in STRING.
+        cout<<STRING; // Prints our STRING.
+    }
+    infile.close();
+    system ("pause");
 
     delete lexer;
 
