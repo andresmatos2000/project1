@@ -7,6 +7,9 @@
 class Lexer
 {
 private:
+    int lineNumber;
+    int maxRead;
+     //maxAutomaton;
     std::vector<Automaton*> automata;
     std::vector<Token*> tokens;
 
