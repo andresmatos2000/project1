@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
 
     string STRING;
     ifstream infile;
-    infile.open ("names.txt");
+    infile.open (filename);
     while(!infile.eof()) // To get you all the lines.
     {
         getline(infile,STRING); // Saves the line in STRING.
