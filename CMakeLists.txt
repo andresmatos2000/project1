@@ -7,13 +7,11 @@ include_directories(.)
 
 add_executable(project1
         Automaton.h
-        ColonAutomaton.cpp
         ColonAutomaton.h
-        ColonDashAutomaton.cpp
         ColonDashAutomaton.h
         Lexer.cpp
+        main.cpp
         Lexer.h
         Token.cpp
         Token.h
-        RightParen.h
-        LeftParen.h Undefined.h QueriesAutomaton.h StringAutomaton.h CommentAutomaton.h FactsAutomaton.h RulesAutomaton.h SchemesAutomaton.h IDAutomaton.h main.cpp Matcher.h)
+        Undefined.h QueriesAutomaton.h StringAutomaton.h CommentAutomaton.h FactsAutomaton.h RulesAutomaton.h SchemesAutomaton.h IDAutomaton.h Matcher.h LeftParenAutomaton.h RightParenAutomaton.h PeriodAutomaton.h CommaAutomaton.h QMarkAutomaton.h)

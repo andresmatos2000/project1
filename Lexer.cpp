@@ -2,15 +2,17 @@
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
 #include "QueriesAutomaton.h"
-#include "Matcher.h"
 #include "CommentAutomaton.h"
+#include "LeftParenAutomaton.h"
+#include "RightParenAutomaton.h"
+#include "PeriodAutomaton.h"
+#include "CommaAutomaton.h"
+#include "QMarkAutomaton.h"
 #include "FactsAutomaton.h"
 #include "SchemesAutomaton.h"
 #include "IDAutomaton.h"
 #include "StringAutomaton.h"
 #include "RulesAutomaton.h"
-#include "LeftParen.h"
-#include "RightParen.h"
 #include <cctype>
 
 Lexer::Lexer() {
@@ -29,25 +31,20 @@ Lexer::~Lexer() {
 }
 
 void Lexer::CreateAutomata() {
- automata.push_back(new Matcher(",",TokenType::COMMA));
-//    automata.push_back(new MatcherAutomaton("?",TokenType::Q_MARK));
-//    automata.push_back(new MatcherAutomaton("(",TokenType::LEFT_PAREN));
-//    automata.push_back(new MatcherAutomaton(")",TokenType::RIGHT_PAREN));
-//    automata.push_back(new MatcherAutomaton(":",TokenType::COLON));
     automata.push_back(new ColonAutomaton());
+    automata.push_back(new SchemesAutomaton());
     automata.push_back(new ColonDashAutomaton());
     automata.push_back(new QueriesAutomaton());
     automata.push_back(new StringAutomaton());
     automata.push_back(new CommentAutomaton());
     automata.push_back(new FactsAutomaton());
     automata.push_back(new RulesAutomaton());
-    automata.push_back(new SchemesAutomaton());
-
-
+    automata.push_back(new LeftParenAutomaton());
+    automata.push_back(new RightParenAutomaton());
+    automata.push_back(new PeriodAutomaton());
+    automata.push_back(new CommaAutomaton());
+    automata.push_back(new QMarkAutomaton());
     automata.push_back(new IDAutomaton());
-
-
-    // TODO: Add the other needed automata here
 }
 
 void Lexer::Run(std::string& input) {

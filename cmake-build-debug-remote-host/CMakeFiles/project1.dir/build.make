@@ -57,35 +57,9 @@ include CMakeFiles/project1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project1.dir/flags.make
 
-CMakeFiles/project1.dir/ColonAutomaton.cpp.o: CMakeFiles/project1.dir/flags.make
-CMakeFiles/project1.dir/ColonAutomaton.cpp.o: ../ColonAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project1.dir/ColonAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/ColonAutomaton.cpp.o -c /users/guest/a/amatos/cs236/ColonAutomaton.cpp
-
-CMakeFiles/project1.dir/ColonAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1.dir/ColonAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/a/amatos/cs236/ColonAutomaton.cpp > CMakeFiles/project1.dir/ColonAutomaton.cpp.i
-
-CMakeFiles/project1.dir/ColonAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/ColonAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/a/amatos/cs236/ColonAutomaton.cpp -o CMakeFiles/project1.dir/ColonAutomaton.cpp.s
-
-CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o: CMakeFiles/project1.dir/flags.make
-CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o: ../ColonDashAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o -c /users/guest/a/amatos/cs236/ColonDashAutomaton.cpp
-
-CMakeFiles/project1.dir/ColonDashAutomaton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1.dir/ColonDashAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/a/amatos/cs236/ColonDashAutomaton.cpp > CMakeFiles/project1.dir/ColonDashAutomaton.cpp.i
-
-CMakeFiles/project1.dir/ColonDashAutomaton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/ColonDashAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/a/amatos/cs236/ColonDashAutomaton.cpp -o CMakeFiles/project1.dir/ColonDashAutomaton.cpp.s
-
 CMakeFiles/project1.dir/Lexer.cpp.o: CMakeFiles/project1.dir/flags.make
 CMakeFiles/project1.dir/Lexer.cpp.o: ../Lexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project1.dir/Lexer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project1.dir/Lexer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/Lexer.cpp.o -c /users/guest/a/amatos/cs236/Lexer.cpp
 
 CMakeFiles/project1.dir/Lexer.cpp.i: cmake_force
@@ -96,22 +70,9 @@ CMakeFiles/project1.dir/Lexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/Lexer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/a/amatos/cs236/Lexer.cpp -o CMakeFiles/project1.dir/Lexer.cpp.s
 
-CMakeFiles/project1.dir/Token.cpp.o: CMakeFiles/project1.dir/flags.make
-CMakeFiles/project1.dir/Token.cpp.o: ../Token.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project1.dir/Token.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/Token.cpp.o -c /users/guest/a/amatos/cs236/Token.cpp
-
-CMakeFiles/project1.dir/Token.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1.dir/Token.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/a/amatos/cs236/Token.cpp > CMakeFiles/project1.dir/Token.cpp.i
-
-CMakeFiles/project1.dir/Token.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/Token.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/a/amatos/cs236/Token.cpp -o CMakeFiles/project1.dir/Token.cpp.s
-
 CMakeFiles/project1.dir/main.cpp.o: CMakeFiles/project1.dir/flags.make
 CMakeFiles/project1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project1.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project1.dir/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/main.cpp.o -c /users/guest/a/amatos/cs236/main.cpp
 
 CMakeFiles/project1.dir/main.cpp.i: cmake_force
@@ -122,25 +83,34 @@ CMakeFiles/project1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/a/amatos/cs236/main.cpp -o CMakeFiles/project1.dir/main.cpp.s
 
+CMakeFiles/project1.dir/Token.cpp.o: CMakeFiles/project1.dir/flags.make
+CMakeFiles/project1.dir/Token.cpp.o: ../Token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project1.dir/Token.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/Token.cpp.o -c /users/guest/a/amatos/cs236/Token.cpp
+
+CMakeFiles/project1.dir/Token.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1.dir/Token.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/a/amatos/cs236/Token.cpp > CMakeFiles/project1.dir/Token.cpp.i
+
+CMakeFiles/project1.dir/Token.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/Token.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/a/amatos/cs236/Token.cpp -o CMakeFiles/project1.dir/Token.cpp.s
+
 # Object files for target project1
 project1_OBJECTS = \
-"CMakeFiles/project1.dir/ColonAutomaton.cpp.o" \
-"CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o" \
 "CMakeFiles/project1.dir/Lexer.cpp.o" \
-"CMakeFiles/project1.dir/Token.cpp.o" \
-"CMakeFiles/project1.dir/main.cpp.o"
+"CMakeFiles/project1.dir/main.cpp.o" \
+"CMakeFiles/project1.dir/Token.cpp.o"
 
 # External object files for target project1
 project1_EXTERNAL_OBJECTS =
 
-project1: CMakeFiles/project1.dir/ColonAutomaton.cpp.o
-project1: CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o
 project1: CMakeFiles/project1.dir/Lexer.cpp.o
-project1: CMakeFiles/project1.dir/Token.cpp.o
 project1: CMakeFiles/project1.dir/main.cpp.o
+project1: CMakeFiles/project1.dir/Token.cpp.o
 project1: CMakeFiles/project1.dir/build.make
 project1: CMakeFiles/project1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable project1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable project1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

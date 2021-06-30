@@ -87,13 +87,7 @@
 		<Unit filename="/users/guest/a/amatos/cs236/Automaton.h">
 			<Option target="project1"/>
 		</Unit>
-		<Unit filename="/users/guest/a/amatos/cs236/ColonAutomaton.cpp">
-			<Option target="project1"/>
-		</Unit>
 		<Unit filename="/users/guest/a/amatos/cs236/ColonAutomaton.h">
-			<Option target="project1"/>
-		</Unit>
-		<Unit filename="/users/guest/a/amatos/cs236/ColonDashAutomaton.cpp">
 			<Option target="project1"/>
 		</Unit>
 		<Unit filename="/users/guest/a/amatos/cs236/ColonDashAutomaton.h">

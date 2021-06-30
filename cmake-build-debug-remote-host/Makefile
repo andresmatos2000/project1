@@ -123,60 +123,6 @@ project1/fast:
 	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/build
 .PHONY : project1/fast
 
-ColonAutomaton.o: ColonAutomaton.cpp.o
-
-.PHONY : ColonAutomaton.o
-
-# target to build an object file
-ColonAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ColonAutomaton.cpp.o
-.PHONY : ColonAutomaton.cpp.o
-
-ColonAutomaton.i: ColonAutomaton.cpp.i
-
-.PHONY : ColonAutomaton.i
-
-# target to preprocess a source file
-ColonAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ColonAutomaton.cpp.i
-.PHONY : ColonAutomaton.cpp.i
-
-ColonAutomaton.s: ColonAutomaton.cpp.s
-
-.PHONY : ColonAutomaton.s
-
-# target to generate assembly for a file
-ColonAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ColonAutomaton.cpp.s
-.PHONY : ColonAutomaton.cpp.s
-
-ColonDashAutomaton.o: ColonDashAutomaton.cpp.o
-
-.PHONY : ColonDashAutomaton.o
-
-# target to build an object file
-ColonDashAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o
-.PHONY : ColonDashAutomaton.cpp.o
-
-ColonDashAutomaton.i: ColonDashAutomaton.cpp.i
-
-.PHONY : ColonDashAutomaton.i
-
-# target to preprocess a source file
-ColonDashAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ColonDashAutomaton.cpp.i
-.PHONY : ColonDashAutomaton.cpp.i
-
-ColonDashAutomaton.s: ColonDashAutomaton.cpp.s
-
-.PHONY : ColonDashAutomaton.s
-
-# target to generate assembly for a file
-ColonDashAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ColonDashAutomaton.cpp.s
-.PHONY : ColonDashAutomaton.cpp.s
-
 Lexer.o: Lexer.cpp.o
 
 .PHONY : Lexer.o
@@ -267,12 +213,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... project1"
-	@echo "... ColonAutomaton.o"
-	@echo "... ColonAutomaton.i"
-	@echo "... ColonAutomaton.s"
-	@echo "... ColonDashAutomaton.o"
-	@echo "... ColonDashAutomaton.i"
-	@echo "... ColonDashAutomaton.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"

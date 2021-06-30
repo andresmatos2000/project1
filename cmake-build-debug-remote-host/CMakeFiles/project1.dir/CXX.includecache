@@ -43,8 +43,8 @@ ColonDashAutomaton.h
 /users/guest/a/amatos/cs236/ColonDashAutomaton.h
 QueriesAutomaton.h
 /users/guest/a/amatos/cs236/QueriesAutomaton.h
-MatcherAutomaton.h
-/users/guest/a/amatos/cs236/MatcherAutomaton.h
+Matcher.h
+/users/guest/a/amatos/cs236/Matcher.h
 CommentAutomaton.h
 /users/guest/a/amatos/cs236/CommentAutomaton.h
 FactsAutomaton.h
@@ -72,7 +72,7 @@ Automaton.h
 Token.h
 /users/guest/a/amatos/cs236/Token.h
 
-/users/guest/a/amatos/cs236/MatcherAutomaton.h
+/users/guest/a/amatos/cs236/Matcher.h
 Automaton.h
 /users/guest/a/amatos/cs236/Automaton.h
 
