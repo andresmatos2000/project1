@@ -48,7 +48,6 @@ void Lexer::CreateAutomata() {
 }
 
 void Lexer::Run(std::string& input) {
-    std::cout << input;
     // TODO: convert this pseudo-code with the algorithm into actual C++ code
     lineNumber = 1;
     // While there are more characters to tokenize
@@ -95,7 +94,6 @@ void Lexer::Run(std::string& input) {
 
         // Update `input` by removing characters read to create Token
         //remove maxRead characters from input
-        std::cout << lineNumber;
     };
     //add end of file token to all tokens
 };
