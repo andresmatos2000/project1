@@ -10,16 +10,16 @@ Token::Token(TokenType type, std::string description, int line) {
 std::string Token::tokenTypeToString(TokenType inputType) {
     switch (inputType) {
         case TokenType::COLON:
-            return "Colon";
+            return "COLON";
             break;
         case TokenType::COLON_DASH:
-            return "Colon_Dash";
+            return "COLON_DASH";
             break;
         case TokenType::QUERIES:
-            return "Queries";
+            return "QUERIES";
             break;
         case TokenType::COMMA:
-            return "Comma";
+            return "COMMA";
             break;
         case TokenType::Q_MARK:
             return "Q_MARK";
@@ -40,25 +40,28 @@ std::string Token::tokenTypeToString(TokenType inputType) {
             return "ADD";
             break;
         case TokenType::COMMENT:
-            return "Comment";
+            return "COMMENT";
             break;
         case TokenType::FACTS:
-            return "Facts";
+            return "FACTS";
             break;
         case TokenType::RULES:
-            return "Rules";
+            return "RULES";
             break;
         case TokenType::SCHEMES:
-            return "Schemes";
+            return "SCHEMES";
             break;
         case TokenType::ID:
             return "ID";
             break;
         case TokenType::STRING:
-            return "String";
+            return "STRING";
             break;
         case TokenType::UNDEFINED:
             return "Undefined";
+            break;
+        case TokenType::TYPE_EOF:
+            return "EOF";
             break;
         default:
             return "Undefined";

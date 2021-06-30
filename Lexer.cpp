@@ -4,6 +4,7 @@
 #include "QueriesAutomaton.h"
 #include "CommentAutomaton.h"
 #include "LeftParenAutomaton.h"
+#include "EOFAutomaton.h"
 #include "RightParenAutomaton.h"
 #include "PeriodAutomaton.h"
 #include "CommaAutomaton.h"
@@ -44,6 +45,7 @@ void Lexer::CreateAutomata() {
     automata.push_back(new PeriodAutomaton());
     automata.push_back(new CommaAutomaton());
     automata.push_back(new QMarkAutomaton());
+    automata.push_back(new EOFAutomaton());
     automata.push_back(new IDAutomaton());
 }
 
