@@ -8,10 +8,11 @@
 class MatcherAutomaton : public Automaton {
     private:
     std::string toMatch;
-
     public:
-    MatcherAutomaton(std::string toMatch, TokenType tokenType);
+    MatcherAutomaton();
     int Read(const std::string& input);
+
+    void S0(const std::string& input);
 };
 
 

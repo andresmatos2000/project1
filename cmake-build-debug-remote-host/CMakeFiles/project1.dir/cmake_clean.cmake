@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project1.dir/ColonAutomaton.cpp.o"
   "CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o"
   "CMakeFiles/project1.dir/Lexer.cpp.o"
+  "CMakeFiles/project1.dir/MatcherAutomaton.cpp.o"
   "CMakeFiles/project1.dir/Token.cpp.o"
   "CMakeFiles/project1.dir/main.cpp.o"
   "project1"

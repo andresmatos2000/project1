@@ -17,4 +17,6 @@ add_executable(project1
         Token.cpp
         Token.h
         MatcherAutomaton.cpp
-        MatcherAutomaton.h)
+        MatcherAutomaton.h
+        RightParen.h
+        LeftParen.h Undefined.h QueriesAutomaton.h StringAutomaton.h CommentAutomaton.h)

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/users/guest/a/amatos/cs236/ColonAutomaton.cpp" "/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles/project1.dir/ColonAutomaton.cpp.o"
   "/users/guest/a/amatos/cs236/ColonDashAutomaton.cpp" "/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o"
   "/users/guest/a/amatos/cs236/Lexer.cpp" "/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles/project1.dir/Lexer.cpp.o"
+  "/users/guest/a/amatos/cs236/MatcherAutomaton.cpp" "/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles/project1.dir/MatcherAutomaton.cpp.o"
   "/users/guest/a/amatos/cs236/Token.cpp" "/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles/project1.dir/Token.cpp.o"
   "/users/guest/a/amatos/cs236/main.cpp" "/users/guest/a/amatos/cs236/cmake-build-debug-remote-host/CMakeFiles/project1.dir/main.cpp.o"
   )

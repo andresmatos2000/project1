@@ -9,7 +9,8 @@ class Lexer
 private:
     int lineNumber;
     int maxRead;
-     //maxAutomaton;
+    int inputRead;
+    Automaton* maxAutomaton;
     std::vector<Automaton*> automata;
     std::vector<Token*> tokens;
 
@@ -25,6 +26,7 @@ public:
     
     // TODO: add other public methods here
 
+    std::vector<Token *> getTokens();
 };
 
 #endif // LEXER_H

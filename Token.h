@@ -1,27 +1,40 @@
 #ifndef TOKEN_H
 #define TOKEN_H
 #include <string>
+#include <iostream>
 
 enum class TokenType {
+    COMMA,
+    PERIOD,
+    Q_MARK,
+    LEFT_PAREN,
+    RIGHT_PAREN,
     COLON,
     COLON_DASH,
-    // TODO: add the other types of tokens
+    MULTIPLY,
+    ADD,
+    SCHEMES,
+    FACTS,
+    RULES,
+    QUERIES,
+    ID,
+    STRING,
+    COMMENT,
     UNDEFINED,
-    EOF_TYPE,
+    TYPE_EOF
 };
 
-class Token
-{
+class Token {
 private:
-    std::string value;
+    std::string _description;
     int line_number;
-    // TODO: add member variables for information needed by Token
+    TokenType tokenType;
 
 public:
     Token(TokenType type, std::string description, int line);
 
-    // TODO: add other needed methods
+    std::string tokenTypeToString(TokenType inputType);
+    std::string To_String();
 };
-
 #endif // TOKEN_H
 

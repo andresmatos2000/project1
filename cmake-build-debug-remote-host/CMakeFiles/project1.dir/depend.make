@@ -14,15 +14,26 @@ CMakeFiles/project1.dir/ColonDashAutomaton.cpp.o: ../Token.h
 CMakeFiles/project1.dir/Lexer.cpp.o: ../Automaton.h
 CMakeFiles/project1.dir/Lexer.cpp.o: ../ColonAutomaton.h
 CMakeFiles/project1.dir/Lexer.cpp.o: ../ColonDashAutomaton.h
+CMakeFiles/project1.dir/Lexer.cpp.o: ../LeftParen.h
 CMakeFiles/project1.dir/Lexer.cpp.o: ../Lexer.cpp
 CMakeFiles/project1.dir/Lexer.cpp.o: ../Lexer.h
+CMakeFiles/project1.dir/Lexer.cpp.o: ../MatcherAutomaton.h
+CMakeFiles/project1.dir/Lexer.cpp.o: ../QueriesAutomaton.h
+CMakeFiles/project1.dir/Lexer.cpp.o: ../RightParen.h
+CMakeFiles/project1.dir/Lexer.cpp.o: ../StringAutomaton.h
 CMakeFiles/project1.dir/Lexer.cpp.o: ../Token.h
+
+CMakeFiles/project1.dir/MatcherAutomaton.cpp.o: ../Automaton.h
+CMakeFiles/project1.dir/MatcherAutomaton.cpp.o: ../MatcherAutomaton.cpp
+CMakeFiles/project1.dir/MatcherAutomaton.cpp.o: ../MatcherAutomaton.h
+CMakeFiles/project1.dir/MatcherAutomaton.cpp.o: ../Token.h
 
 CMakeFiles/project1.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/project1.dir/Token.cpp.o: ../Token.h
 
 CMakeFiles/project1.dir/main.cpp.o: ../Automaton.h
 CMakeFiles/project1.dir/main.cpp.o: ../Lexer.h
+CMakeFiles/project1.dir/main.cpp.o: ../MatcherAutomaton.h
 CMakeFiles/project1.dir/main.cpp.o: ../Token.h
 CMakeFiles/project1.dir/main.cpp.o: ../main.cpp
 

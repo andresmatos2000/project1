@@ -99,10 +99,22 @@
 		<Unit filename="/users/guest/a/amatos/cs236/ColonDashAutomaton.h">
 			<Option target="project1"/>
 		</Unit>
+		<Unit filename="/users/guest/a/amatos/cs236/LeftParen.h">
+			<Option target="project1"/>
+		</Unit>
 		<Unit filename="/users/guest/a/amatos/cs236/Lexer.cpp">
 			<Option target="project1"/>
 		</Unit>
 		<Unit filename="/users/guest/a/amatos/cs236/Lexer.h">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/users/guest/a/amatos/cs236/MatcherAutomaton.cpp">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/users/guest/a/amatos/cs236/MatcherAutomaton.h">
+			<Option target="project1"/>
+		</Unit>
+		<Unit filename="/users/guest/a/amatos/cs236/RightParen.h">
 			<Option target="project1"/>
 		</Unit>
 		<Unit filename="/users/guest/a/amatos/cs236/Token.cpp">
