@@ -13,10 +13,7 @@ add_executable(project1
         ColonDashAutomaton.h
         Lexer.cpp
         Lexer.h
-        main.cpp
         Token.cpp
         Token.h
-        MatcherAutomaton.cpp
-        MatcherAutomaton.h
         RightParen.h
-        LeftParen.h Undefined.h QueriesAutomaton.h StringAutomaton.h CommentAutomaton.h)
+        LeftParen.h Undefined.h QueriesAutomaton.h StringAutomaton.h CommentAutomaton.h FactsAutomaton.h RulesAutomaton.h SchemesAutomaton.h IDAutomaton.h main.cpp Matcher.h)

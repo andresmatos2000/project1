@@ -18,6 +18,20 @@ Automaton.h
 Automaton.h
 /users/guest/a/amatos/cs236/Automaton.h
 
+/users/guest/a/amatos/cs236/CommentAutomaton.h
+Automaton.h
+/users/guest/a/amatos/cs236/Automaton.h
+
+/users/guest/a/amatos/cs236/FactsAutomaton.h
+Automaton.h
+/users/guest/a/amatos/cs236/Automaton.h
+
+/users/guest/a/amatos/cs236/IDAutomaton.h
+Automaton.h
+/users/guest/a/amatos/cs236/Automaton.h
+cctype
+-
+
 /users/guest/a/amatos/cs236/LeftParen.h
 
 /users/guest/a/amatos/cs236/Lexer.cpp
@@ -31,8 +45,18 @@ QueriesAutomaton.h
 /users/guest/a/amatos/cs236/QueriesAutomaton.h
 MatcherAutomaton.h
 /users/guest/a/amatos/cs236/MatcherAutomaton.h
+CommentAutomaton.h
+/users/guest/a/amatos/cs236/CommentAutomaton.h
+FactsAutomaton.h
+/users/guest/a/amatos/cs236/FactsAutomaton.h
+SchemesAutomaton.h
+/users/guest/a/amatos/cs236/SchemesAutomaton.h
+IDAutomaton.h
+/users/guest/a/amatos/cs236/IDAutomaton.h
 StringAutomaton.h
 /users/guest/a/amatos/cs236/StringAutomaton.h
+RulesAutomaton.h
+/users/guest/a/amatos/cs236/RulesAutomaton.h
 LeftParen.h
 /users/guest/a/amatos/cs236/LeftParen.h
 RightParen.h
@@ -51,16 +75,20 @@ Token.h
 /users/guest/a/amatos/cs236/MatcherAutomaton.h
 Automaton.h
 /users/guest/a/amatos/cs236/Automaton.h
-iostream
--
-string
--
 
 /users/guest/a/amatos/cs236/QueriesAutomaton.h
 Automaton.h
 /users/guest/a/amatos/cs236/Automaton.h
 
 /users/guest/a/amatos/cs236/RightParen.h
+
+/users/guest/a/amatos/cs236/RulesAutomaton.h
+Automaton.h
+/users/guest/a/amatos/cs236/Automaton.h
+
+/users/guest/a/amatos/cs236/SchemesAutomaton.h
+Automaton.h
+/users/guest/a/amatos/cs236/Automaton.h
 
 /users/guest/a/amatos/cs236/StringAutomaton.h
 Automaton.h

@@ -204,33 +204,6 @@ Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
 
-MatcherAutomaton.o: MatcherAutomaton.cpp.o
-
-.PHONY : MatcherAutomaton.o
-
-# target to build an object file
-MatcherAutomaton.cpp.o:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/MatcherAutomaton.cpp.o
-.PHONY : MatcherAutomaton.cpp.o
-
-MatcherAutomaton.i: MatcherAutomaton.cpp.i
-
-.PHONY : MatcherAutomaton.i
-
-# target to preprocess a source file
-MatcherAutomaton.cpp.i:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/MatcherAutomaton.cpp.i
-.PHONY : MatcherAutomaton.cpp.i
-
-MatcherAutomaton.s: MatcherAutomaton.cpp.s
-
-.PHONY : MatcherAutomaton.s
-
-# target to generate assembly for a file
-MatcherAutomaton.cpp.s:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/MatcherAutomaton.cpp.s
-.PHONY : MatcherAutomaton.cpp.s
-
 Token.o: Token.cpp.o
 
 .PHONY : Token.o
@@ -303,9 +276,6 @@ help:
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
-	@echo "... MatcherAutomaton.o"
-	@echo "... MatcherAutomaton.i"
-	@echo "... MatcherAutomaton.s"
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"

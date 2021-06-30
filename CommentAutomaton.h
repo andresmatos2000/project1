@@ -11,8 +11,10 @@ class CommentAutomaton : public Automaton
 private:
     void S1(const std::string& input);
     void S2(const std::string& input);
+    void S3(const std::string& input);
+    void S4(const std::string& input);
 public:
-    CommentAutomaton(){}  // Call the base constructor
+    CommentAutomaton() : Automaton(TokenType::COMMENT) {}
 
     void S0(const std::string& input);
 };
@@ -32,7 +34,7 @@ void CommentAutomaton::S1(const std::string& input) {
         //this is a line comment
         inputRead++;
         index++;
-        S1(input);
+        S4(input);
     }
     else if(input[index] == '|'){
         //this is a block comment
@@ -45,11 +47,11 @@ void CommentAutomaton::S1(const std::string& input) {
     }
 }
 void CommentAutomaton::S2(const std::string& input) {
-    while(input[index] != "|"){
+    while(input[index] != '|'){
         inputRead++;
         index++;
     }
-    if(input[index] == "|"){
+    if(input[index] == '|'){
         inputRead++;
         index++;
         S3(input);
@@ -58,12 +60,18 @@ void CommentAutomaton::S2(const std::string& input) {
         Serr();
     }
 }
-void CommentAutomaton::S2(const std::string& input) {
-    if(input[index] == "#"){
+void CommentAutomaton::S3(const std::string& input) {
+    if(input[index] == '#'){
         inputRead++;
     }
     else {
         Serr();
+    }
+}
+void CommentAutomaton::S4(const std::string& input) {
+    while(input[index] != '\n'){
+        inputRead++;
+        index++;
     }
 }
 

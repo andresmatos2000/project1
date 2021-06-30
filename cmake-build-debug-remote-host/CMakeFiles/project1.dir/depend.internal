@@ -15,18 +15,18 @@ CMakeFiles/project1.dir/Lexer.cpp.o
  /users/guest/a/amatos/cs236/Automaton.h
  /users/guest/a/amatos/cs236/ColonAutomaton.h
  /users/guest/a/amatos/cs236/ColonDashAutomaton.h
+ /users/guest/a/amatos/cs236/CommentAutomaton.h
+ /users/guest/a/amatos/cs236/FactsAutomaton.h
+ /users/guest/a/amatos/cs236/IDAutomaton.h
  /users/guest/a/amatos/cs236/LeftParen.h
  /users/guest/a/amatos/cs236/Lexer.cpp
  /users/guest/a/amatos/cs236/Lexer.h
  /users/guest/a/amatos/cs236/MatcherAutomaton.h
  /users/guest/a/amatos/cs236/QueriesAutomaton.h
  /users/guest/a/amatos/cs236/RightParen.h
+ /users/guest/a/amatos/cs236/RulesAutomaton.h
+ /users/guest/a/amatos/cs236/SchemesAutomaton.h
  /users/guest/a/amatos/cs236/StringAutomaton.h
- /users/guest/a/amatos/cs236/Token.h
-CMakeFiles/project1.dir/MatcherAutomaton.cpp.o
- /users/guest/a/amatos/cs236/Automaton.h
- /users/guest/a/amatos/cs236/MatcherAutomaton.cpp
- /users/guest/a/amatos/cs236/MatcherAutomaton.h
  /users/guest/a/amatos/cs236/Token.h
 CMakeFiles/project1.dir/Token.cpp.o
  /users/guest/a/amatos/cs236/Token.cpp
@@ -34,6 +34,5 @@ CMakeFiles/project1.dir/Token.cpp.o
 CMakeFiles/project1.dir/main.cpp.o
  /users/guest/a/amatos/cs236/Automaton.h
  /users/guest/a/amatos/cs236/Lexer.h
- /users/guest/a/amatos/cs236/MatcherAutomaton.h
  /users/guest/a/amatos/cs236/Token.h
  /users/guest/a/amatos/cs236/main.cpp

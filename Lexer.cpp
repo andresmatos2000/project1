@@ -2,9 +2,13 @@
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
 #include "QueriesAutomaton.h"
-#include "MatcherAutomaton.h"
+#include "Matcher.h"
 #include "CommentAutomaton.h"
+#include "FactsAutomaton.h"
+#include "SchemesAutomaton.h"
+#include "IDAutomaton.h"
 #include "StringAutomaton.h"
+#include "RulesAutomaton.h"
 #include "LeftParen.h"
 #include "RightParen.h"
 #include <cctype>
@@ -25,12 +29,23 @@ Lexer::~Lexer() {
 }
 
 void Lexer::CreateAutomata() {
+ automata.push_back(new Matcher(",",TokenType::COMMA));
+//    automata.push_back(new MatcherAutomaton("?",TokenType::Q_MARK));
+//    automata.push_back(new MatcherAutomaton("(",TokenType::LEFT_PAREN));
+//    automata.push_back(new MatcherAutomaton(")",TokenType::RIGHT_PAREN));
+//    automata.push_back(new MatcherAutomaton(":",TokenType::COLON));
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
     automata.push_back(new QueriesAutomaton());
     automata.push_back(new StringAutomaton());
     automata.push_back(new CommentAutomaton());
-    //automata.push_back(new MatcherAutomaton());
+    automata.push_back(new FactsAutomaton());
+    automata.push_back(new RulesAutomaton());
+    automata.push_back(new SchemesAutomaton());
+
+
+    automata.push_back(new IDAutomaton());
+
 
     // TODO: Add the other needed automata here
 }

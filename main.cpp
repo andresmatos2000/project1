@@ -1,5 +1,4 @@
 #include "Lexer.h"
-#include "MatcherAutomaton.h"
 #include <iostream>
 #include <fstream>
 
