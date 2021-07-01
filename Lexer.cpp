@@ -10,6 +10,8 @@
 #include "QMarkAutomaton.h"
 #include "FactsAutomaton.h"
 #include "SchemesAutomaton.h"
+#include "MultiplyAutomaton.h"
+#include "AddAutomaton.h"
 #include "IDAutomaton.h"
 #include "StringAutomaton.h"
 #include "RulesAutomaton.h"
@@ -35,6 +37,8 @@ void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
     automata.push_back(new SchemesAutomaton());
     automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new MultiplyAutomaton());
+    automata.push_back(new AddAutomaton());
     automata.push_back(new QueriesAutomaton());
     automata.push_back(new StringAutomaton());
     automata.push_back(new CommentAutomaton());

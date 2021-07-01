@@ -10,10 +10,6 @@
 Token.h
 /users/guest/a/amatos/cs236/Token.h
 
-/users/guest/a/amatos/cs236/BlockCommentAutomaton.h
-Automaton.h
-/users/guest/a/amatos/cs236/Automaton.h
-
 /users/guest/a/amatos/cs236/ColonAutomaton.h
 Automaton.h
 /users/guest/a/amatos/cs236/Automaton.h
@@ -55,8 +51,6 @@ QueriesAutomaton.h
 /users/guest/a/amatos/cs236/QueriesAutomaton.h
 CommentAutomaton.h
 /users/guest/a/amatos/cs236/CommentAutomaton.h
-BlockCommentAutomaton.h
-/users/guest/a/amatos/cs236/BlockCommentAutomaton.h
 LeftParenAutomaton.h
 /users/guest/a/amatos/cs236/LeftParenAutomaton.h
 RightParenAutomaton.h

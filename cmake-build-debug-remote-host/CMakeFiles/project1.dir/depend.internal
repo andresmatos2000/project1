@@ -3,7 +3,6 @@
 
 CMakeFiles/project1.dir/Lexer.cpp.o
  /users/guest/a/amatos/cs236/Automaton.h
- /users/guest/a/amatos/cs236/BlockCommentAutomaton.h
  /users/guest/a/amatos/cs236/ColonAutomaton.h
  /users/guest/a/amatos/cs236/ColonDashAutomaton.h
  /users/guest/a/amatos/cs236/CommaAutomaton.h
