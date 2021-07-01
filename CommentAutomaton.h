@@ -46,9 +46,9 @@ void CommentAutomaton::S2(const std::string& input) {
         }
         index++;
         inputRead++;
-        if(inputRead > input.size()){
+        if(unsigned(inputRead) > input.size()){
             type = TokenType::UNDEFINED;
-            std::cout << "ERR";
+            //std::cout << "ERR";
             break;
         }
     }
@@ -70,7 +70,7 @@ void CommentAutomaton::S4(const std::string& input) {
     } else {
         inputRead++;
         index++;
-        std::cout << input;
+        //std::cout << input;
         S2(input);
     }
 }

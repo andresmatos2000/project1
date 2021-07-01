@@ -15,7 +15,8 @@ public:
     //   the compiler will autogenerate a default constructor if not explicit.
     Automaton() : Automaton(TokenType::UNDEFINED) {}
 
-    Automaton(TokenType type) { this->type = type; }
+    Automaton(TokenType type) { this->type = type; };
+    virtual ~Automaton() = default;
 
     // Start the automaton and return the number of characters read
     //   read == 0 indicates the input was rejected

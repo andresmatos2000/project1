@@ -21,13 +21,13 @@ Lexer::Lexer() {
 }
 
 Lexer::~Lexer() {
-    for(unsigned int i = 0; i < automata.size(); i++){
-        delete automata[i];
-    };
-    for(unsigned int k = 0; k < tokens.size(); k++){
-        delete tokens[k];
-    };
-
+    for (auto p : automata){
+        delete p;
+    }
+    automata.clear();
+    for( auto p: tokens){
+        delete p;
+    } tokens.clear();
     // TODO: need to clean up the memory in `automata` and `tokens`
 }
 

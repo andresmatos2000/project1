@@ -36,9 +36,9 @@ void StringAutomaton::S1(const std::string& input) {
             inputRead++;
             index++;
             S2(input);
-    } else if(inputRead > input.size()){
+    } else if(unsigned(inputRead) > input.size()){
         type = TokenType::UNDEFINED;
-        std::cout << "ERR";
+        //std::cout << "ERR";
     } else {
         inputRead++;
         index++;
