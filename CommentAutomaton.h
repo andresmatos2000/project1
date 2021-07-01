@@ -48,9 +48,11 @@ void CommentAutomaton::S2(const std::string& input) {
         inputRead++;
         if(unsigned(inputRead) > input.size()){
             type = TokenType::UNDEFINED;
+
             //std::cout << "ERR";
             break;
         }
+
     }
     if(input[index] == '|') {
         index++;
