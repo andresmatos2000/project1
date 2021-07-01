@@ -4,7 +4,6 @@
 #include "QueriesAutomaton.h"
 #include "CommentAutomaton.h"
 #include "LeftParenAutomaton.h"
-#include "EOFAutomaton.h"
 #include "RightParenAutomaton.h"
 #include "PeriodAutomaton.h"
 #include "CommaAutomaton.h"
@@ -14,6 +13,7 @@
 #include "IDAutomaton.h"
 #include "StringAutomaton.h"
 #include "RulesAutomaton.h"
+#include "Undefined.h"
 #include <cctype>
 
 Lexer::Lexer() {
@@ -45,8 +45,9 @@ void Lexer::CreateAutomata() {
     automata.push_back(new PeriodAutomaton());
     automata.push_back(new CommaAutomaton());
     automata.push_back(new QMarkAutomaton());
-    automata.push_back(new EOFAutomaton());
     automata.push_back(new IDAutomaton());
+    automata.push_back(new UndefinedAutomaton());
+
 }
 
 void Lexer::Run(std::string& input) {
@@ -56,7 +57,6 @@ void Lexer::Run(std::string& input) {
     while (input.size() > 0) {
         maxRead = 0;
         Automaton* maxAutomaton = automata[0];
-
         bool whiteSpace = true;
         while(whiteSpace){
             char frontChar = input.front();
@@ -71,6 +71,9 @@ void Lexer::Run(std::string& input) {
                 whiteSpace = false;
             }
         };
+        if(input.empty()){
+            break;
+        }
         for(Automaton* automaton : automata) {
                 inputRead = automaton->Start(input);
                 if (inputRead > maxRead) {
@@ -84,20 +87,21 @@ void Lexer::Run(std::string& input) {
             Token* newToken = maxAutomaton->CreateToken(input.substr(0, maxRead),lineNumber);
                 lineNumber += maxAutomaton->NewLinesRead();
                 tokens.push_back(newToken);
+        } else if( maxRead == -1){
+            tokens.push_back(new Token(TokenType::UNDEFINED,input,lineNumber));
+            maxRead = input.size();
         }
         // No automaton accepted input
         // Create single character undefined token
         else {
             maxRead = 1;
             tokens.push_back(new Token(TokenType::UNDEFINED,input.substr(0,maxRead),lineNumber));
-            lineNumber++;
         };
         input.erase(0,maxRead);
-
         // Update `input` by removing characters read to create Token
         //remove maxRead characters from input
     };
-    //add end of file token to all tokens
+    tokens.push_back(new Token(TokenType::TYPE_EOF,input.substr(0,maxRead),lineNumber));
 };
 
 std::vector<Token*> Lexer::getTokens(){

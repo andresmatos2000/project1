@@ -27,20 +27,29 @@ void StringAutomaton::S0(const std::string& input) {
     }
 }
 void StringAutomaton::S1(const std::string& input) {
-    while( input[index] != '\''){
+    if(input[index] == '\n'){
+        newLines++;
+        index++;
+        inputRead++;
+        S1(input);
+    } else if(input[index] == '\''){
+            inputRead++;
+            index++;
+            S2(input);
+    } else if(inputRead > input.size()){
+        type = TokenType::UNDEFINED;
+        std::cout << "ERR";
+    } else {
         inputRead++;
         index++;
-    };
-    if(input[index] =='\''){
-        inputRead++;
-        index++;
-        S2(input);
+        S1(input);
     }
 }
+
 void StringAutomaton::S2(const std::string& input) {
-    if(input[index] =='\'') {
-        inputRead++;
+    if(input[index] == '\''){
         index++;
+        inputRead++;
         S1(input);
     }
 }

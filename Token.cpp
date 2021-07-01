@@ -58,13 +58,13 @@ std::string Token::tokenTypeToString(TokenType inputType) {
             return "STRING";
             break;
         case TokenType::UNDEFINED:
-            return "Undefined";
+            return "UNDEFINED";
             break;
         case TokenType::TYPE_EOF:
             return "EOF";
             break;
         default:
-            return "Undefined";
+            return "UNDEFINED";
             break;
     }
 }

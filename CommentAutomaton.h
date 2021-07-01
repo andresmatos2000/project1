@@ -5,7 +5,6 @@
 #ifndef PROJECT1_COMMENTAUTOMATON_H
 #define PROJECT1_COMMENTAUTOMATON_H
 #include "Automaton.h"
-
 class CommentAutomaton : public Automaton
 {
 private:
@@ -22,57 +21,57 @@ public:
 
 void CommentAutomaton::S0(const std::string& input) {
     if (input[index] == '#') {
-        inputRead++;
         index++;
+        inputRead++;
         S1(input);
     } else {
         Serr();
     }
 }
 void CommentAutomaton::S1(const std::string& input) {
-    if (input[index] != '|') {
-        //this is a line comment
-        inputRead++;
+    if (input[index] == '|') {
+        //block
         index++;
-        S4(input);
-    }
-    else if(input[index] == '|'){
-        //this is a block comment
         inputRead++;
-        index++;
         S2(input);
-    }
-    else {
-        Serr();
+    } else {
+        //line comment
+        S3(input);
     }
 }
 void CommentAutomaton::S2(const std::string& input) {
     while(input[index] != '|'){
-        inputRead++;
+        if(input[index] == '\n'){
+            newLines++;
+        }
         index++;
-    }
-    if(input[index] == '|'){
         inputRead++;
-        index++;
-        S3(input);
+        if(inputRead > input.size()){
+            type = TokenType::UNDEFINED;
+            std::cout << "ERR";
+            break;
+        }
     }
-    else {
-        Serr();
+    if(input[index] == '|') {
+        index++;
+        inputRead++;
+        S4(input);
     }
 }
 void CommentAutomaton::S3(const std::string& input) {
-    if(input[index] == '#'){
+    while(input[index] != '\n'){
+        index++;
         inputRead++;
-    }
-    else {
-        Serr();
     }
 }
 void CommentAutomaton::S4(const std::string& input) {
-    while(input[index] != '\n'){
+    if(input[index] == '#'){
+        inputRead++;
+    } else {
         inputRead++;
         index++;
+        std::cout << input;
+        S2(input);
     }
 }
-
 #endif //PROJECT1_COMMENTAUTOMATON_H
