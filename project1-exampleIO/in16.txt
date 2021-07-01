@@ -2,11 +2,5 @@
 'a string'
 # a comment
 Schemes
-#|
-asd
-asd
-asd
-|#
-#|taco
 FactsRules
-:#|:-
+::-
