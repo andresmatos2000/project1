@@ -20,7 +20,15 @@ private:
 
 public:
     Lexer();
-    ~Lexer();
+    ~Lexer(){
+        delete maxAutomaton;
+        for(Automaton* t: automata){
+            delete t;
+        }automata.clear();
+        for(Token* t: tokens){
+            delete t;
+        }tokens.clear();
+    };
 
     void Run(std::string& input);
     
