@@ -27,6 +27,9 @@ int main(int argc, char** argv) {
     }
     cout << "Total Tokens = " + to_string(tokenList.size());
     delete lexer;
+    for(Token* t: tokenList){
+        delete t;
+    } tokenList.clear();
 
     return 0;
 }
